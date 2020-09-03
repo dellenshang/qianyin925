@@ -1,4 +1,9 @@
-<div style="display: flex; width: 902px; padding: 24px;">
+<style>
+  .sadfasda {
+    display: flex; width: 902px; padding: 24px;
+  }
+</style>
+<div class="sadfasda">
   <div style="flex: 1;">
     <img 
       style="width: 100%; height: 200px;"
