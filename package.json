@@ -1,0 +1,41 @@
+{
+  "name": "qianyin925",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "release": "standard-version --release-as",
+    "release:100": "npm run release -- major",
+    "release:010": "npm run release -- minor",
+    "release:001": "npm run release -- patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qianyin925/qianyin925.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qianyin925/qianyin925/issues"
+  },
+  "homepage": "https://github.com/qianyin925/qianyin925#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-angular": "^9.1.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.2.5",
+    "standard-version": "^9.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }    
+}
